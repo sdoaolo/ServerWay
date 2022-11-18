@@ -1,24 +1,17 @@
 package App.Product;
 
 public class Product {
-    int calorie;
+
     int id;
     String name;
+    int calorie;
     int price;
 
-    public Product(int calorie, int id, String name, int price) {
-        this.calorie = calorie;
+    public Product(int id, String name, int calorie, int price) {
         this.id = id;
         this.name = name;
-        this.price = price;
-    }
-
-    public int getCalorie() {
-        return calorie;
-    }
-
-    public void setCalorie(int calorie) {
         this.calorie = calorie;
+        this.price = price;
     }
 
     public int getId() {
@@ -35,6 +28,14 @@ public class Product {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public int getCalorie() {
+        return calorie;
+    }
+
+    public void setCalorie(int calorie) {
+        this.calorie = calorie;
     }
 
     public int getPrice() {

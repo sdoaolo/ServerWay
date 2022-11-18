@@ -3,7 +3,7 @@ package App.Ingredient.SubIngredient.RealIngredient.Vegetable;
 import App.Ingredient.SubIngredient.Vegetable;
 
 public class Olive extends Vegetable {
-    public Olive(int kcal, String name) {
-        super(kcal, name);
+    public Olive() {
+        super(23,"올리브");
     }
 }

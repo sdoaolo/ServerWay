@@ -9,19 +9,15 @@ public class Ingredient {
         this.name = name;
     }
 
+    public Ingredient() {
+
+    }
+
     public int getKcal() {
         return kcal;
     }
-
-    public void setKcal(int kcal) {
-        this.kcal = kcal;
-    }
-
     public String getName() {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 }

@@ -15,6 +15,11 @@ public class Bread extends Ingredient {
         this.burn = burn;
     }
 
+    public Bread() {
+        super();
+    }
+
+
     public Boolean getBurn() {
         return burn;
     }

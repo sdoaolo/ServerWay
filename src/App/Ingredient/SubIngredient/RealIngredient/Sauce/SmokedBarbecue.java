@@ -3,7 +3,7 @@ package App.Ingredient.SubIngredient.RealIngredient.Sauce;
 import App.Ingredient.SubIngredient.Sauce;
 
 public class SmokedBarbecue extends Sauce {
-    public SmokedBarbecue(int kcal, String name) {
-        super(kcal, name);
+    public SmokedBarbecue() {
+        super(260,"스모크바베큐");
     }
 }
