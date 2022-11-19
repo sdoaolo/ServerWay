@@ -11,12 +11,15 @@ import App.Product.SubProduct.Sandwich;
 
 public class VegetarianSandwich extends Sandwich {
     public VegetarianSandwich(MAIN_INGREDIENT mainIngredient, Bread bread, Cheese[] cheese, Vegetable[] vegetable, Sauce[] sauce) {
-        super(MenuProduct.VEGETARIAN_SANDWICH.getId(),
+        super(
+                MenuProduct.VEGETARIAN_SANDWICH.getProductId(),
+                MenuProduct.VEGETARIAN_SANDWICH.getId(),
                 MenuProduct.VEGETARIAN_SANDWICH.getName(),
                 MenuProduct.VEGETARIAN_SANDWICH.getCalorie(),
                 MenuProduct.VEGETARIAN_SANDWICH.getPrice(),
                 mainIngredient, bread, cheese, vegetable, sauce);
     }
-
+    @Override
+    public String getIcon() { return "🥬"; }
 
 }

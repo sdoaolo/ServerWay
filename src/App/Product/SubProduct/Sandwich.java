@@ -8,18 +8,22 @@ import App.Ingredient.SubIngredient.Vegetable;
 import App.Product.Product;
 
 public class Sandwich extends Product {
-    MAIN_INGREDIENT mainIngredient;
-    Bread bread;
-    Cheese[] cheese;
-    Vegetable[] vegetable;
-    Sauce[] sauce;
+    protected String icon = "🥪";
+    private MAIN_INGREDIENT mainIngredient;
+    private Bread bread;
+    private Cheese[] cheese;
+    private Vegetable[] vegetable;
+    private Sauce[] sauce;
 
-    public Sandwich(int id, String name, int calorie, int price, MAIN_INGREDIENT mainIngredient, Bread bread, Cheese[] cheese, Vegetable[] vegetable, Sauce[] sauce) {
-        super(id, name, calorie, price);
+    public Sandwich(int productId, int id, String name, int calorie, int price, MAIN_INGREDIENT mainIngredient, Bread bread, Cheese[] cheese, Vegetable[] vegetable, Sauce[] sauce) {
+        super(productId,id, name, calorie, price);
         this.mainIngredient = mainIngredient;
         this.bread = bread;
         this.cheese = cheese;
         this.vegetable = vegetable;
         this.sauce = sauce;
     }
+
+    public String getIcon() { return icon; }
+
 }
