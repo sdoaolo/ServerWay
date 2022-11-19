@@ -23,12 +23,7 @@ import App.Product.SubProduct.RealProduct.WedgeAndSoup.BroccoliSoup;
 import App.Product.SubProduct.RealProduct.WedgeAndSoup.Hashbrown;
 import App.Product.SubProduct.RealProduct.WedgeAndSoup.MushroomSoup;
 import App.Product.SubProduct.RealProduct.WedgeAndSoup.Wedgepotato;
-import App.Product.SubProduct.Sandwich;
-import App.Product.SubProduct.Side;
-import App.Product.SubProduct.SubProductType.Drink;
-import App.Product.SubProduct.SubProductType.WedgesAndSoup;
 
-import java.util.Arrays;
 
 public class ProductRepository {
 
@@ -52,36 +47,10 @@ public class ProductRepository {
             new BroccoliSoup(),
             new MushroomSoup()
     };
-    private Sandwich[] sandwiches ;
-    private Side[] cookiesAndChips ;
-    private Drink[] drinks;
-    private Side[] wedgeAndSoups ;
 
-    public ProductRepository(Product[] products) {
-        this.products = products;
-        this.sandwiches = (Sandwich[]) Arrays.copyOfRange(products,0,4);
-        this.cookiesAndChips = (Side[]) Arrays.copyOfRange(products,4,10);
-        this.drinks = (Drink[]) Arrays.copyOfRange(products,10,13);
-        this.wedgeAndSoups = (WedgesAndSoup[]) Arrays.copyOfRange(products,13,17);
-    }
+    public ProductRepository() {}
 
     public Product[] getProducts() {
         return products;
-    }
-
-    public Sandwich[] getSandwiches() {
-        return sandwiches;
-    }
-
-    public Side[] getCookiesAndChips() {
-        return cookiesAndChips;
-    }
-
-    public Drink[] getDrinks() {
-        return drinks;
-    }
-
-    public Side[] getWedgeAndSoups() {
-        return wedgeAndSoups;
     }
 }
