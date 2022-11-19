@@ -5,7 +5,9 @@ import App.Product.SubProduct.SubProductType.WedgesAndSoup;
 
 public class Hashbrown extends WedgesAndSoup {
     public Hashbrown() {
-        super(MenuProduct.HASHBROWN.getId(),
+        super(
+                MenuProduct.HASHBROWN.getProductId(),
+                MenuProduct.HASHBROWN.getId(),
                 MenuProduct.HASHBROWN.getName(),
                 MenuProduct.HASHBROWN.getCalorie(),
                 MenuProduct.HASHBROWN.getPrice(),

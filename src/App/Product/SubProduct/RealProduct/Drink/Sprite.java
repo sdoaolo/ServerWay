@@ -5,7 +5,9 @@ import App.Product.SubProduct.SubProductType.Drink;
 
 public class Sprite extends Drink {
     public Sprite() {
-        super(MenuProduct.SPRITE.getId(),
+        super(
+                MenuProduct.SPRITE.getProductId(),
+                MenuProduct.SPRITE.getId(),
                 MenuProduct.SPRITE.getName(),
                 MenuProduct.SPRITE.getCalorie(),
                 MenuProduct.SPRITE.getPrice()

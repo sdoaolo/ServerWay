@@ -6,7 +6,9 @@ import App.Product.SubProduct.SubProductType.Drink;
 public class Americano extends Drink {
 
     public Americano() {
-        super(MenuProduct.AMERICANO.getId(),
+        super(
+                MenuProduct.AMERICANO.getProductId(),
+                MenuProduct.AMERICANO.getId(),
                 MenuProduct.AMERICANO.getName(),
                 MenuProduct.AMERICANO.getCalorie(),
                 MenuProduct.AMERICANO.getPrice()

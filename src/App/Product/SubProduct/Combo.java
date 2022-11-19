@@ -1,14 +1,21 @@
 package App.Product.SubProduct;
 
+import App.Product.Product;
 import App.Product.SubProduct.SubProductType.Drink;
 
-public class Combo {
-    Sandwich sandwich;
-    Drink drink;
-    public Combo(int calorie, int id, String name, int price, Sandwich sandwich, Drink drink) {
+public class Combo extends Product {
+
+
+    private String icon = "🥪🥤";
+    private Sandwich sandwich;
+    private Drink drink;
+
+    public Combo(int productId, int id, String name, int calorie, int price, Sandwich sandwich, Drink drink) {
+        super(productId, id, name, calorie, price);
         this.sandwich = sandwich;
         this.drink = drink;
     }
+    public  String getIcon() { return icon; }
     public Sandwich getSandwich() {
         return sandwich;
     }

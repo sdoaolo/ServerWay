@@ -5,7 +5,9 @@ import App.Product.SubProduct.SubProductType.Cookie;
 
 public class RasberryCheeseCookie extends Cookie {
     public RasberryCheeseCookie() {
-        super(MenuProduct.RASBERRY_CHEESE_COOKIE.getId(),
+        super(
+                MenuProduct.RASBERRY_CHEESE_COOKIE.getProductId(),
+                MenuProduct.RASBERRY_CHEESE_COOKIE.getId(),
                 MenuProduct.RASBERRY_CHEESE_COOKIE.getName(),
                 MenuProduct.RASBERRY_CHEESE_COOKIE.getCalorie(),
                 MenuProduct.RASBERRY_CHEESE_COOKIE.getPrice()

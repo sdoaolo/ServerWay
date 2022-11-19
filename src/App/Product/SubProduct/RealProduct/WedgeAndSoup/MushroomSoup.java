@@ -5,7 +5,9 @@ import App.Product.SubProduct.SubProductType.WedgesAndSoup;
 
 public class MushroomSoup extends WedgesAndSoup {
     public MushroomSoup() {
-        super(MenuProduct.MUSHROOM_SOUP.getId(),
+        super(
+                MenuProduct.MUSHROOM_SOUP.getProductId(),
+                MenuProduct.MUSHROOM_SOUP.getId(),
                 MenuProduct.MUSHROOM_SOUP.getName(),
                 MenuProduct.MUSHROOM_SOUP.getCalorie(),
                 MenuProduct.MUSHROOM_SOUP.getPrice(),

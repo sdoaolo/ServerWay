@@ -5,7 +5,9 @@ import App.Product.SubProduct.SubProductType.Chip;
 
 public class PotatoChips extends Chip {
     public PotatoChips() {
-        super(MenuProduct.POTATOCHIPS.getId(),
+        super(
+                MenuProduct.POTATOCHIPS.getProductId(),
+                MenuProduct.POTATOCHIPS.getId(),
                 MenuProduct.POTATOCHIPS.getName(),
                 MenuProduct.POTATOCHIPS.getCalorie(),
                 MenuProduct.POTATOCHIPS.getPrice()

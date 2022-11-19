@@ -3,6 +3,7 @@ package App.Ingredient.SubIngredient;
 import App.Ingredient.Ingredient;
 
 public class Bread extends Ingredient {
+    private String icon = "🥖";
     Boolean burn;
     int length;
 
@@ -19,6 +20,7 @@ public class Bread extends Ingredient {
         super();
     }
 
+    public String getIcon() { return icon; }
 
     public Boolean getBurn() {
         return burn;

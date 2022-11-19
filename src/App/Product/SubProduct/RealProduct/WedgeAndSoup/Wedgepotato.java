@@ -5,7 +5,9 @@ import App.Product.SubProduct.SubProductType.WedgesAndSoup;
 
 public class Wedgepotato extends WedgesAndSoup {
     public Wedgepotato() {
-        super(MenuProduct.WEDGEPOTATOE.getId(),
+        super(
+                MenuProduct.WEDGEPOTATOE.getProductId(),
+                MenuProduct.WEDGEPOTATOE.getId(),
                 MenuProduct.WEDGEPOTATOE.getName(),
                 MenuProduct.WEDGEPOTATOE.getCalorie(),
                 MenuProduct.WEDGEPOTATOE.getPrice(),

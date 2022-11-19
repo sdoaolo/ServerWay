@@ -11,10 +11,16 @@ import App.Product.SubProduct.Sandwich;
 public class ItallianBMTSandwich extends Sandwich {
 
     public ItallianBMTSandwich(MAIN_INGREDIENT mainIngredient, Bread bread, Cheese[] cheese, Vegetable[] vegetable, Sauce[] sauce) {
-        super(MenuProduct.ITALLIAN_BMT_SANDWICH.getId(),
+        super(
+                MenuProduct.ITALLIAN_BMT_SANDWICH.getProductId(),
+                MenuProduct.ITALLIAN_BMT_SANDWICH.getId(),
                 MenuProduct.ITALLIAN_BMT_SANDWICH.getName(),
                 MenuProduct.ITALLIAN_BMT_SANDWICH.getCalorie(),
                 MenuProduct.ITALLIAN_BMT_SANDWICH.getPrice(),
                 mainIngredient, bread, cheese, vegetable, sauce);
     }
+
+    @Override
+    public String getIcon() { return "🥓"; }
+
 }

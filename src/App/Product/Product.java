@@ -1,17 +1,22 @@
 package App.Product;
 
 public class Product {
-
+    int productId;
     int id;
     String name;
     int calorie;
     int price;
 
-    public Product(int id, String name, int calorie, int price) {
+    public Product(int productId, int id, String name, int calorie, int price) {
+        this.productId = productId;
         this.id = id;
         this.name = name;
         this.calorie = calorie;
         this.price = price;
+    }
+
+    public int getProductId() {
+        return productId;
     }
 
     public int getId() {

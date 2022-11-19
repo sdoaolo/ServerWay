@@ -6,7 +6,9 @@ import App.Product.SubProduct.SubProductType.Drink;
 public class CokeZero extends Drink {
 
     public CokeZero() {
-        super(MenuProduct.COKE_ZERO.getId(),
+        super(
+                MenuProduct.COKE_ZERO.getProductId(),
+                MenuProduct.COKE_ZERO.getId(),
                 MenuProduct.COKE_ZERO.getName(),
                 MenuProduct.COKE_ZERO.getCalorie(),
                 MenuProduct.COKE_ZERO.getPrice()
